@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Testsuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="utilities.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="chromeTest(failed)" verbose="0">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="testCases.ProductCheckOutPage">
+        <methods>
+          <include name="productcheckout"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.ProductCheckOutPage -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+  <test thread-count="5" name="edgeBrowserTest(failed)" verbose="0">
+    <parameter name="Browser" value="msedge"/>
+    <classes>
+      <class name="testCases.ProductCheckOutPage">
+        <methods>
+          <include name="productcheckout"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.ProductCheckOutPage -->
+    </classes>
+  </test> <!-- edgeBrowserTest(failed) -->
+  <test thread-count="5" name="firefoxTest(failed)" verbose="0">
+    <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="testCases.ProductCheckOutPage">
+        <methods>
+          <include name="productcheckout"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.ProductCheckOutPage -->
+    </classes>
+  </test> <!-- firefoxTest(failed) -->
+</suite> <!-- Failed suite [Testsuite] -->

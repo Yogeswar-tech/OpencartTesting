@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Testsuite" thread-count="5">
+	<listeners>
+		<listener class-name="utilities.ExtentReportManager" />
+	</listeners>
+	<test name="chromeTest">
+		<parameter name="Browser" value="chrome" />
+		<classes>
+			<class name="testCases.ProductCheckOutPage">
+			</class>
+		</classes>
+	</test>
+	<test name="edgeBrowserTest">
+		<parameter name="Browser" value="msedge" />
+		<classes>
+			<class name="testCases.ProductCheckOutPage">
+			</class>
+		</classes>
+	</test>
+	<test name="firefoxTest">
+		<parameter name="Browser" value="firefox" />
+		<classes>
+			<class name="testCases.ProductCheckOutPage">
+			</class>
+		</classes>
+	</test>
+</suite>
